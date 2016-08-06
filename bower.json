@@ -2,7 +2,8 @@
   "name": "creepycss-band",
   "homepage": "https://github.com/creepy-teepee/creepycss-band",
   "authors": [
-    "James Howard<james@reetgood.co.uk>"
+    "James Howard <james@reetgood.co.uk>",
+    "Jon Hurrell"
   ],
   "description": "The band object adds vertical padding.",
   "main": "_objects.band.scss",
