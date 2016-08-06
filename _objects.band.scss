@@ -1,0 +1,76 @@
+// #BAND
+
+// The band object adds vertical padding/
+
+$creepy-band-padding:                         $creepy-base-spacing-unit !default;
+$creepy-band-padding--tiny:                   quarter($creepy-band-padding) !default;
+$creepy-band-padding--small:                  halve($creepy-band-padding) !default;
+$creepy-band-padding--large:                  double($creepy-band-padding) !default;
+$creepy-band-padding--huge:                   quadruple($creepy-band-padding) !default;
+
+$creepy-enable-band--tiny:                    false !default;
+$creepy-enable-band--small:                   false !default;
+$creepy-enable-band--large:                   false !default;
+$creepy-enable-band--huge:                    false !default;
+
+
+
+
+
+.o-band,
+%o-band {
+	padding-top: $creepy-band-padding;
+	padding-bottom: $creepy-band-padding;
+}
+
+
+
+
+
+@if ($creepy-enable-band--tiny == true) {
+
+	// Tiny band.
+
+	.o-band--tiny,
+	%o-band--tiny {
+		padding-top: $creepy-band-padding--tiny;
+		padding-bottom: $creepy-band-padding--tiny;
+	}
+
+}
+
+@if ($creepy-enable-band--small == true) {
+
+	// Small band.
+
+	.o-band--small,
+	%o-band--small {
+		padding-top: $creepy-band-padding--small;
+		padding-bottom: $creepy-band-padding--small;
+	}
+
+}
+
+@if ($creepy-enable-band--large == true) {
+
+	// Large band.
+
+	.o-band--large,
+	%o-band--large {
+		padding-top: $creepy-band-padding--large;
+		padding-bottom: $creepy-band-padding--large;
+	}
+
+}
+
+@if ($creepy-enable-band--huge == true) {
+
+	// Huge band.
+
+	.o-band--huge,
+	%o-band--huge {
+		padding-top: $creepy-band-padding--huge;
+		padding-bottom: $creepy-band-padding--huge;
+	}
+
+}
